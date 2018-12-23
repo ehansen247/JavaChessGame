@@ -68,9 +68,8 @@ public class Chess {
             graphic.setMinutes2(time);
             graphic.updateTime();
         } else {
-            graphic.setMinutes1(1000000000);
-            graphic.setMinutes2(1000000000);
-            graphic.updateTime();
+            graphic.setMinutes1(0);
+            graphic.setMinutes2(0);
         }
     }
 

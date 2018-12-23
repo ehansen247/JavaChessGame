@@ -79,7 +79,7 @@ public class gamePGN {
      * @throws IOException Standard Error Declaration for methods which use Java I/O
      */
     void writePGNToFile() throws IOException {
-        PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("LastGamePGN.out")));
+        PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("LastGamePGN.txt")));
         for (int i = 1; i <= turnN; ++i) {
             out.println(pgn.get(i));
         }
