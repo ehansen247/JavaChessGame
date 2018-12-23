@@ -16,7 +16,7 @@ White/Black wins on time!: The game has ended on time.
 The most recently played game will be written in PGN notation (e.g. 1. e4 e5) and output to a file titled "LastGamePGN.txt." You can open this file and copy the PGN so that you can recreate and analyze your past games. 
 
 ### Running the Program
-This project was created in BlueJ. To run from the command line (Terminal on Mac), change into the project directory and enter "java Chess." This will call the project's main method. 
+This project was created in BlueJ. To run from the command line (Terminal on Mac), change into the project directory and enter "java Chess". This will call the project's main method. 
 
 ### Contact
 Contact me at ehansen247@gmail.com if you have any more questions.
