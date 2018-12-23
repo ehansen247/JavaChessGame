@@ -1,6 +1,7 @@
-1.e4 e5
-2.Bc4 c5
-3.Qh5 b6
-4.Qxf7#
+1.e4 e7 e5
+2.Bc4 c6
+3.Qf3 c5
+4.Qf3
 5.Qxf7#
+6.Qxf7#
 0-1
