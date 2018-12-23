@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=gameR
+comment0.target=gamePGN(Chess)
+comment1.params=isCol\ isRow\ startPiece\ wasCapture\ wasKingSideCastle\ wasQueenSideCastle\ isInRangeOfOtherPiece\ startSquare
+comment1.target=void\ addMoveToMap(boolean,\ boolean,\ Piece,\ boolean,\ boolean,\ boolean,\ boolean,\ Square)
+comment1.text=\n\ Takes\ information\ on\ the\ last\ turn,\ and\ converts\ and\ stores\ it\ in\ PGN\ complying\ format\n\n\ @param\ startPiece\ \ \ \ \ \ \ \ \ \ \ \ the\ piece\ being\ moved\n\ @param\ wasCapture\ \ \ \ \ \ \ \ \ \ \ \ whether\ or\ not\ a\ piece\ was\ captured\ during\ this\ turn\n\ @param\ wasKingSideCastle\ \ \ \ \ whether\ or\ not\ it\ was\ a\ king\ side\ castle\ move\n\ @param\ wasQueenSideCastle\ \ \ \ whether\ or\ not\ it\ was\ a\ queen\ side\ castle\ move\n\ @param\ isInRangeOfOtherPiece\ whether\ the\ move\ was\ made\ that\ could\ have\ been\ made\ by\ another\ piece\n\ @param\ startSquare\ \ \ \ \ \ \ \ \ \ \ the\ starting\ square\ of\ the\ move\n
+comment2.params=isCol\ isRow\ startPiece\ wasCapture\ wasKingSideCastle\ wasQueenSideCastle\ isInRangeOfOtherPiece\ startSquare
+comment2.target=java.lang.String\ formatMoveAsPGN(boolean,\ boolean,\ Piece,\ boolean,\ boolean,\ boolean,\ boolean,\ Square)
+comment3.params=
+comment3.target=void\ writePGNToFile()
+comment3.text=\n\ Writes\ the\ current\ game\ in\ PGN\ complying\ format\ to\ a\ file\ named\ "LastGamePGN.out"\n\n\ @throws\ IOException\ Standard\ Error\ Declaration\ for\ methods\ which\ use\ Java\ I/O\n
+numComments=4
