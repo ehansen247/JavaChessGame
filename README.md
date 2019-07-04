@@ -36,12 +36,12 @@ Thanks for playing!
 ### Different Outputs
 Outputs in the prompt window include:
 
-  - Not A Piece: The user has clicked a square before clicking a piece. Click a piece instead.   
-  - Out of Bounds: The user has clicked outside of the board.    
-  - Invalid Move: This move is invalid according to the rules of chess.   
-  - Wrong Color: It's the the color/player's turn. You cannot move the black pieces when it is not black's turn.   
-  - White/Black Wins!: The game has ended by checkmate.    
-  - White/Black wins on time!: The game has ended on time.    
+  - "Not A Piece": The user has clicked a square before clicking a piece. Click a piece instead.   
+  - "Out of Bounds": The user has clicked outside of the board.    
+  - "Invalid Move": This move is invalid according to the rules of chess.   
+  - "Wrong Color": It's not the color/player's turn. You cannot move the black pieces when it is not black's turn.   
+  - "White/Black Wins!": The game has ended by checkmate.    
+  - "White/Black wins on time!": The game has ended on time.    
 
 
 ### Contact
