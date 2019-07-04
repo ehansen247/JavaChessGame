@@ -1,7 +1,7 @@
 # JavaChessGame
 
 ## Introduction
-A Java Applet that creates a fully functional, two-player, graphics-based, interactive chess game/program.
+A fully functional, two-player, graphics-based, interactive chess game/program.
 
 To start the game...
 1) git clone this repository (git clone https://github.com/ehansen247/JavaChessGame.git)
