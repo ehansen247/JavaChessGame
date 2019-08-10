@@ -1,7 +1,7 @@
 # JavaChessGame
 
 ## Introduction
-A fully functional, two-player, graphics-based, interactive chess game/program. Built
+A fully functional, two-player, graphics-based, interactive chess game/program. Developed with Java using BlueJ.
 
 To start the game...
 1) Clone this repository (git clone https://github.com/ehansen247/JavaChessGame.git)
