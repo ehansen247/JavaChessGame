@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * @author Mark Russell
  * @version Final
  */
+
 public class Piece {
     private volatile Chess game;
     private volatile String pieceName;
@@ -393,7 +394,7 @@ public class Piece {
                     for (int r = 1; r <= 8; r++) {
                         for (int c = 1; c <= 8; c++) {
                             if (this.game.getBoard().getBoard()[r][c].getCurPiece() != null && !this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceColor().equals(this.getPieceColor()) && this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().contains(this.game.getBoard().getBoard()[this.getRow() + 1][this.getCol() - 1])) {
-                                final int x = r;
+                                // final int x = r;
                                 final int y = c;
                                 if (!this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceName().endsWith("PAWN") || this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().stream().anyMatch(square -> square.getColumn() != y && square.getRow() == this.getRow() + 1 && square.getColumn() == this.getCol() - 1)) {
                                     isC1 = true;
@@ -410,7 +411,7 @@ public class Piece {
                     for (int r = 1; r <= 8; r++) {
                         for (int c = 1; c <= 8; c++) {
                             if (this.game.getBoard().getBoard()[r][c].getCurPiece() != null && !this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceColor().equals(this.getPieceColor()) && this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().contains(this.game.getBoard().getBoard()[this.getRow() + 1][this.getCol() + 1])) {
-                                final int x = r;
+                                // final int x = r;
                                 final int y = c;
                                 if (!this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceName().endsWith("PAWN") || this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().stream().anyMatch(square -> square.getColumn() != y && square.getRow() == this.getRow() + 1 && square.getColumn() == this.getCol() + 1)) {
                                     isC1 = true;
@@ -427,7 +428,7 @@ public class Piece {
                     for (int r = 1; r <= 8; r++) {
                         for (int c = 1; c <= 8; c++) {
                             if (this.game.getBoard().getBoard()[r][c].getCurPiece() != null && !this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceColor().equals(this.getPieceColor()) && this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().contains(this.game.getBoard().getBoard()[this.getRow() - 1][this.getCol() - 1])) {
-                                final int x = r;
+                                // final int x = r;
                                 final int y = c;
                                 if (!this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceName().endsWith("PAWN") || this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().stream().anyMatch(square -> square.getColumn() != y && square.getRow() == this.getRow() - 1 && square.getColumn() == this.getCol() - 1)) {
                                     isC1 = true;
@@ -444,7 +445,7 @@ public class Piece {
                     for (int r = 1; r <= 8; r++) {
                         for (int c = 1; c <= 8; c++) {
                             if (this.game.getBoard().getBoard()[r][c].getCurPiece() != null && !this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceColor().equals(this.getPieceColor()) && this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().contains(this.game.getBoard().getBoard()[this.getRow() - 1][this.getCol() + 1])) {
-                                final int x = r;
+                                // final int x = r;
                                 final int y = c;
                                 if (!this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceName().endsWith("PAWN") || this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().stream().anyMatch(square -> square.getColumn() != y && square.getRow() == this.getRow() - 1 && square.getColumn() == this.getCol() + 1)) {
                                     isC1 = true;
@@ -461,7 +462,7 @@ public class Piece {
                     for (int r = 1; r <= 8; r++) {
                         for (int c = 1; c <= 8; c++) {
                             if (this.game.getBoard().getBoard()[r][c].getCurPiece() != null && !this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceColor().equals(this.getPieceColor()) && this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().contains(this.game.getBoard().getBoard()[this.getRow() + 1][this.getCol()])) {
-                                final int x = r;
+                                // final int x = r;
                                 final int y = c;
                                 if (!this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceName().endsWith("PAWN") || this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().stream().anyMatch(square -> square.getColumn() != y && square.getRow() == this.getRow() + 1 && square.getColumn() == this.getCol())) {
                                     isC1 = true;
@@ -478,7 +479,7 @@ public class Piece {
                     for (int r = 1; r <= 8; r++) {
                         for (int c = 1; c <= 8; c++) {
                             if (this.game.getBoard().getBoard()[r][c].getCurPiece() != null && !this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceColor().equals(this.getPieceColor()) && this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().contains(this.game.getBoard().getBoard()[this.getRow() - 1][this.getCol()])) {
-                                final int x = r;
+                                // final int x = r;
                                 final int y = c;
                                 if (!this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceName().endsWith("PAWN") || this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().stream().anyMatch(square -> square.getColumn() != y && square.getRow() == this.getRow() - 1 && square.getColumn() == this.getCol())) {
                                     isC1 = true;
@@ -495,7 +496,7 @@ public class Piece {
                     for (int r = 1; r <= 8; r++) {
                         for (int c = 1; c <= 8; c++) {
                             if (this.game.getBoard().getBoard()[r][c].getCurPiece() != null && !this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceColor().equals(this.getPieceColor()) && this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().contains(this.game.getBoard().getBoard()[this.getRow()][this.getCol() - 1])) {
-                                final int x = r;
+                                // final int x = r;
                                 final int y = c;
                                 if (!this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceName().endsWith("PAWN") || this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().stream().anyMatch(square -> square.getColumn() != y && square.getRow() == this.getRow() && square.getColumn() == this.getCol() - 1)) {
                                     isC1 = true;
@@ -512,7 +513,7 @@ public class Piece {
                     for (int r = 1; r <= 8; r++) {
                         for (int c = 1; c <= 8; c++) {
                             if (this.game.getBoard().getBoard()[r][c].getCurPiece() != null && !this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceColor().equals(this.getPieceColor()) && this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().contains(this.game.getBoard().getBoard()[this.getRow()][this.getCol() + 1])) {
-                                final int x = r;
+                                // final int x = r;
                                 final int y = c;
                                 if (!this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceName().endsWith("PAWN") || this.game.getBoard().getBoard()[r][c].getCurPiece().getPieceRange().stream().anyMatch(square -> square.getColumn() != y && square.getRow() == this.getRow() && square.getColumn() == this.getCol() + 1)) {
                                     isC1 = true;
@@ -605,11 +606,8 @@ public class Piece {
 
     /**
      * Returns the column of the piece's current square
-     *
-     * @return the column of the piece's current square
      */
     int getCol() {
         return column;
     }
 }
-

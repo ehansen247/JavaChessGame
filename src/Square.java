@@ -7,8 +7,8 @@ public class Square {
     private Piece curPiece;
     private int row;
     private int column;
-    private String color;
-    private String name;
+    // private String color;
+    // private String name;
     private boolean isOccupied;
 
     /**
@@ -21,8 +21,8 @@ public class Square {
     Square(int row, int column, String color) {
         this.row = row;
         this.column = column;
-        this.color = color;
-        this.name = (row + "" + column);
+        // this.color = color;
+        // this.name = (row + "" + column);
         isOccupied = false;
         this.curPiece = null;
     }

@@ -3,10 +3,13 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+
+
 /**
  * @author Eric Hansen
  * @author Mark Russell
  * @version Final
+ * Java 8 SE
  */
 public class Board {
     final String COLOR_1;
@@ -104,7 +107,7 @@ public class Board {
             }
             imgStr += ".jpg";
             try {
-                return ImageIO.read(new File("Images/" + imgStr));
+                return ImageIO.read(new File("../Images/" + imgStr));
             } catch (IOException ex) {
                 ex.printStackTrace();
                 return null;

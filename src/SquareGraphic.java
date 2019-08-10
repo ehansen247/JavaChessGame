@@ -1,4 +1,3 @@
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -13,7 +12,8 @@ import java.awt.event.MouseEvent;
  * @version Final
  */
 public class SquareGraphic extends JPanel {
-    private Board board;
+    private static final long serialVersionUID = 1L;
+  private Board board;
     private Chess game;
     private boolean moveStart;
     private Piece curPiece;
@@ -118,7 +118,7 @@ public class SquareGraphic extends JPanel {
     void setCurPiece(Piece curPiece) {
         this.curPiece = curPiece;
     }
-    
+
 
     /**
      * sets whether or not the player has begun their move
@@ -180,7 +180,7 @@ public class SquareGraphic extends JPanel {
         curPiece = null;
         moveStart = false;
     }
-    
+
     /**
      * sets the Current Piece for this turn/move
      *
@@ -270,7 +270,7 @@ public class SquareGraphic extends JPanel {
             repaint();
         }
         if (minutes1 == 0)
-        
+
             System.out.println("White wins on time!");
 
         else
@@ -278,4 +278,3 @@ public class SquareGraphic extends JPanel {
         this.removeClickListener();
     }
 }
-

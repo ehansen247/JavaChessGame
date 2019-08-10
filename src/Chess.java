@@ -1,3 +1,5 @@
+
+
 import java.io.*;
 import java.util.*;
 
@@ -47,7 +49,8 @@ public class Chess {
     public static void main(String[] args) throws IOException {
         String color1, color2;
         Scanner uin1 = new Scanner(System.in);
-        do {
+        do
+        {
             System.out.println("Welcome to Chess. Please input one color you would like your board to be. \nWe have Blue, Green, Red, Purple, Black, White, and Brown");
             color1 = uin1.next().toUpperCase();
             System.out.println("Input a second color");
@@ -71,17 +74,18 @@ public class Chess {
             graphic.setMinutes1(0);
             graphic.setMinutes2(0);
         }
+        uin1.close();
     }
 
     /**
      * Gets amd returns a specific special moves-only range mainly for en passant
-     * 
+     *
      * @return returns a specific special moves-only range mainly for en passant
      */
     Map<Piece, Square> getConditionalRange() {
         return conditionalRange;
     }
-    
+
     /**
      * @return True if all characters are digits
      */
@@ -95,8 +99,8 @@ public class Chess {
         }
         return true;
     }
-    
-    /** 
+
+    /**
      * Castles the King and the Rook
      */
     private boolean castle(Piece king, Piece rook) {
@@ -465,18 +469,13 @@ public class Chess {
                                 promQueen.updateAllRanges();
                                 break;
                         }
-                        //System.out.println("1");
-                        //System.out.println("2");
                         this.updateCheck();
-                        //System.out.println("3");
                         getPgn().addMoveToMap(isInRangeColumn, isInRangeRow, endSquare.getCurPiece(), endHasPiece && endPiece1 != null, false, false, inRangeOfOther, startSquare1);
-                        //System.out.println("4");
                         getPgn().writePGNToFile();
-                        //System.out.println("5");
                         incrementCurrentTurn();
-                        //System.out.println("6");
                         graphic.repaint();
                         resetConditionalRange();
+                        tempScan.close();
                         return;
                     } else if ((startPiece.getPieceColor().equals("BLACK") && endSquare.getRow() == 1 && startPiece.getPieceName().split(" ")[1].equals("PAWN"))) {
                         Scanner tempScan = new Scanner(System.in);
@@ -528,6 +527,7 @@ public class Chess {
                         getPgn().writePGNToFile();
                         incrementCurrentTurn();
                         resetConditionalRange();
+                        tempScan.close();
                         return;
                     }
                 } catch (Exception e) {
