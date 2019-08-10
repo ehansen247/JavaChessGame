@@ -1,12 +1,20 @@
 # JavaChessGame
 
 ## Introduction
-A fully functional, two-player, graphics-based, interactive chess game/program.
+A fully functional, two-player, graphics-based, interactive chess game/program. Built
 
 To start the game...
-1) git clone this repository (git clone https://github.com/ehansen247/JavaChessGame.git)
-1) change into the project directory (cd JavaChessGame)
-2) call the Chess.java main method (java Chess)
+1) Clone this repository (git clone https://github.com/ehansen247/JavaChessGame.git)
+2) Change into the project's src directory 
+3) Compile all .java files (Java 1.8).
+4) Run the Chess main method.  
+
+```
+git clone https://github.com/ehansen247/JavaChessGame.git  
+cd JavaChessGame; cd src  
+javac *.java  
+java Chess  
+```
 
 Thanks for playing!
 
